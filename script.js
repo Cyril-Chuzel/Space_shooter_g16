@@ -1,30 +1,61 @@
-const player = document.querySelector('.player')
-let playerTop = 0
-let playerLeft = 0
-const playerSpeed = 30
-
-window.addEventListener('keydown', (event) =>
+const background = document.querySelector('.background')
+let background_scroll = 0
 {
-    if(event.code == 'ArrowUp')
+    //==Varriable dans le scope==
+    const playerInfo =
+{
+    top: 90,
+    left: 50,
+    speedY: 0.8,
+    speedX: 0.4
+}
+    // ==========================
+    document.onkeydown = function(e)
     {
-        playerTop -= playerSpeed
-        player.style.transform = `rotate(0deg)`
+        console.log(e)
+        // Check Z key status
+        if(e.keyCode === 90)
+        {
+            console.log('UP')
+            playerInfo.top -= playerInfo.speedY
+            changePlayerPosition()
+        }
+        // Check S key status
+        else if(e.keyCode === 83)
+        {
+            console.log('DOWN')
+            playerInfo.top += playerInfo.speedY
+            changePlayerPosition()
+        }
+        // Check Q key status
+        else if(e.keyCode === 81)
+        {
+            console.log('LEFT')
+            playerInfo.left -= playerInfo.speedX
+            changePlayerPosition()
+        }
+        // Check D key status
+        else if(e.keyCode === 68)
+        {
+            console.log('RIGHT')
+            playerInfo.left += playerInfo.speedX
+            changePlayerPosition()
+        }
+
     }
-    else if(event.code == 'ArrowRight')
+    // Write the new player postion into the CSS
+    function changePlayerPosition()
     {
-        playerLeft += playerSpeed
-        player.style.transform = `rotate(90deg)`
+        document.querySelector('.player').style.top = `${playerInfo.top}vh`
+        document.querySelector('.player').style.left = `${playerInfo.left}vw`
     }
-    else if(event.code == 'ArrowDown')
-    {
-        playerTop += playerSpeed
-        player.style.transform = `rotate(180deg)`
-    }
-    else if(event.code == 'ArrowLeft')
-    {
-        playerLeft -= playerSpeed
-        player.style.transform = `rotate(-90deg)`
-    }
-    player.style.top = `${playerTop}px`
-    player.style.left = `${playerLeft}px`
-})
+}
+
+window.setInterval(function()
+{
+    background_scroll += 10
+    background.style.paddingTop = `${background_scroll}px`
+    console.log(background.style.paddingTop)
+}, 1000)
+
+console.log(background)
