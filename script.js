@@ -1,9 +1,15 @@
 const nebula = document.querySelector('.nebula')
 const stars = document.querySelector('.stars')
-let background_scroll = 0
-
-console.log(nebula)
-console.log(stars)
+const scoreBoard = document.querySelector('.scoreBoard')
+const timer = document.querySelector('.time')
+const pause = document.querySelector('.pause')
+const pauseContainer = document.querySelector('.pauseContainer')
+const resume = pauseContainer.querySelector('.resume')
+const pauseScreen = document.querySelector('.pauseScreen')
+let backgroundScroll = 0
+let score = 0
+let time = 0
+let paused = false
 
 {
     //==Varriable dans le scope==
@@ -56,10 +62,28 @@ console.log(stars)
     }
 }
 
-window.setInterval(function()
+pause.addEventListener('click', () =>
 {
-    background_scroll += 20
-    nebula.style.paddingTop = `${background_scroll}px`
-    stars.style.paddingTop = `${background_scroll*3}px`
-    // console.log(background.style.paddingTop)
-}, 1000)
+    pauseScreen.style.display = `flex`
+    paused = true
+
+resume.addEventListener('click', () =>
+{
+    pauseScreen.style.display = 'none'
+    paused = false
+})
+
+})
+
+    window.setInterval(function()
+    {
+    if (paused == false)
+        {
+            backgroundScroll += 20
+            time += 1
+            nebula.style.paddingTop = `${backgroundScroll}px`
+            stars.style.paddingTop = `${backgroundScroll*3}px`
+            timer.value = `${time}s  `
+            // console.log(background.style.paddingTop)
+        }
+    }, 1000)
