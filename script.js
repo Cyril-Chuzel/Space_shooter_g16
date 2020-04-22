@@ -58,8 +58,8 @@ console.log(stars)
 
 window.setInterval(function()
 {
-    background_scroll += 10
+    background_scroll += 20
     nebula.style.paddingTop = `${background_scroll}px`
-    stars.style.paddingTop = `${background_scroll*2}px`
+    stars.style.paddingTop = `${background_scroll*3}px`
     // console.log(background.style.paddingTop)
 }, 1000)
