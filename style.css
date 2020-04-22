@@ -8,11 +8,11 @@ body
 
 .background
 {
-    background: url(./sprites/background/background.png) 100px repeat;
+    background: url(./sprites/background/nebula.png) 100px repeat;
     position: absolute;
     width: 1920px;
     height: 1000px;
-    background-size: cover;
+    background-size: auto;
     top: 0px;
     left: 0px;
     transition: 1s linear;

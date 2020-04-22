@@ -12,32 +12,32 @@ let background_scroll = 0
     // ==========================
     document.onkeydown = function(e)
     {
-        console.log(e)
+        // console.log(e)
         // Check Z key status
         if(e.keyCode === 90)
         {
-            console.log('UP')
+            // console.log('UP')
             playerInfo.top -= playerInfo.speedY
             changePlayerPosition()
         }
         // Check S key status
         else if(e.keyCode === 83)
         {
-            console.log('DOWN')
+            // console.log('DOWN')
             playerInfo.top += playerInfo.speedY
             changePlayerPosition()
         }
         // Check Q key status
         else if(e.keyCode === 81)
         {
-            console.log('LEFT')
+            // console.log('LEFT')
             playerInfo.left -= playerInfo.speedX
             changePlayerPosition()
         }
         // Check D key status
         else if(e.keyCode === 68)
         {
-            console.log('RIGHT')
+            // console.log('RIGHT')
             playerInfo.left += playerInfo.speedX
             changePlayerPosition()
         }
@@ -55,7 +55,5 @@ window.setInterval(function()
 {
     background_scroll += 10
     background.style.paddingTop = `${background_scroll}px`
-    console.log(background.style.paddingTop)
+    // console.log(background.style.paddingTop)
 }, 1000)
-
-console.log(background)
