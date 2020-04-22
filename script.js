@@ -1,5 +1,10 @@
-const background = document.querySelector('.background')
+const nebula = document.querySelector('.nebula')
+const stars = document.querySelector('.stars')
 let background_scroll = 0
+
+console.log(nebula)
+console.log(stars)
+
 {
     //==Varriable dans le scope==
     const playerInfo =
@@ -54,6 +59,7 @@ let background_scroll = 0
 window.setInterval(function()
 {
     background_scroll += 10
-    background.style.paddingTop = `${background_scroll}px`
+    nebula.style.paddingTop = `${background_scroll}px`
+    stars.style.paddingTop = `${background_scroll*2}px`
     // console.log(background.style.paddingTop)
 }, 1000)
