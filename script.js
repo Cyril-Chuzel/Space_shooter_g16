@@ -69,49 +69,46 @@ let paused = false
 }
 
 
-// ========== Change ship design - not finishd ======
-
-shipR.addEventListener('click',() =>
-{
-    player.style.background = `url(./sprites/vaisseaux/joueur/R_1.png`
-    pauseScreen.style.display = 'none'
-    paused = false
-})
-
-shipB.addEventListener('click',() =>
-{
-    player.style.background = `url(./sprites/vaisseaux/joueur/B_1.png`
-    pauseScreen.style.display = 'none'
-    paused = false
-})
-
-shipG.addEventListener('click',() =>
-{
-    player.style.background = `url(./sprites/vaisseaux/joueur/G_1.png`
-    pauseScreen.style.display = 'none'
-    paused = false
-})
-
-//==============================// W.I.P //============================================
-
-// //====== Stop game when click on pause button
-// pause.addEventListener('click', () =>
+// ========== Change ship design - not finishd =======================================
+// shipR.addEventListener('click',() =>
 // {
-//     pauseScreen.style.display = `flex`
-//     resume.style.display = 'flex'
-//     menu.style.display = 'flex'
-//     paused = true
+//     player.style.background = `url(./sprites/vaisseaux/joueur/R_1.png`
+//     pauseScreen.style.display = 'none'
+//     paused = false
 // })
 //
-// //====== Resume game when click on resume button
-// resume.addEventListener('click', () =>
+// shipB.addEventListener('click',() =>
 // {
+//     player.style.background = `url(./sprites/vaisseaux/joueur/B_1.png`
 //     pauseScreen.style.display = 'none'
-//     resume.style.display = 'none'
-//     menu.style.display = 'none'
+//     paused = false
+// })
+//
+// shipG.addEventListener('click',() =>
+// {
+//     player.style.background = `url(./sprites/vaisseaux/joueur/G_1.png`
+//     pauseScreen.style.display = 'none'
 //     paused = false
 // })
 //==============================// W.I.P //============================================
+
+//====== Stop game when click on pause button
+pause.addEventListener('click', () =>
+{
+    pauseScreen.style.display = `flex`
+    resume.style.display = 'flex'
+    menu.style.display = 'flex'
+    paused = true
+})
+
+//====== Resume game when click on resume button
+resume.addEventListener('click', () =>
+{
+    pauseScreen.style.display = 'none'
+    resume.style.display = 'none'
+    menu.style.display = 'none'
+    paused = false
+})
 
 //====== Scrolling of backgrounds images and time counter
 window.setInterval(function()
