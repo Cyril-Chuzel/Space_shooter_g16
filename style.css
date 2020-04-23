@@ -1,5 +1,7 @@
 body
 {
+    overflow-x: hidden;
+    overflow-y: hidden;
     background: url(./sprites/background/space.png);
     width: 100vw;
     height: 100vh;
@@ -43,7 +45,7 @@ body
     width: 80px;
     height: 80px;
     background: url(./sprites/vaisseaux/joueur/Basic.png);
-    transition: top 0.1s linear, left 0.1s linear;
+    /* transition: top 0.1s linear, left 0.1s linear; */ 
 }
 
 .footer
@@ -118,4 +120,14 @@ body
     color: #fbc531;
     margin: 16px;
     outline: none;
+}
+.missiles
+{
+    background-image: url(sprites/tirs/unnamed.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height:52.5px;
+    width:35px;
+    top: 90vh;
+    left: 50vw ;
 }
