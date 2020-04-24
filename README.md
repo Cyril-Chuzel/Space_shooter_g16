@@ -31,6 +31,7 @@ Voici une liste des fonctionalités que nous aurions voulu ajouter si nous avion
 - finaliser les tirs et les ennemis
 - chaque ennemi tué ajoute des points au score (multiplicateur avec le temps ?)
 - si un ennemi sort de l'écran ou touche le joueur, il perd une vie
+- utilisation d'une nouvelle police plus retro
 - ajout d'une page d'accueuil
 - possibilité d'améliorer le vaisseau au fil de la partie vers trois branche différentes, offrant différents types de tirs.
 - possibilité de modifier les controles, et contrôle à la souris
