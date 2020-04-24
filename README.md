@@ -1,9 +1,9 @@
 # Space_shooter_g16
-semaine intensive hetic
+semaine intensive hetic - Retro Infinity
 
 date de rendu : 24 avril 2020 (9 heure au plus tard)
 
-Ceci est le projet du groupe 16, composé de Yann Tancelin, Elliot Tomczak et Cyril Chuzel.
+Retro Infinity est le projet du groupe 16, composé de Yann Tancelin, Elliot Tomczak et Cyril Chuzel.
 Il s'agit d'un jeu de type "space shooter / shoot them up".
 
 Nous avons eu une semaine pour accomplir ce travail.
