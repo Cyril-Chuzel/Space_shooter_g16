@@ -92,7 +92,7 @@ const ennemiesPosition = [ennemiP1, ennemiP2, ennemiP3, ennemiP4, ennemiP5, enne
             keyPress.space = true
         }
 
-        console.log(keyPress)
+        // console.log(keyPress)
     }
     // Check for key release and update keyPress constant
     document.onkeyup = function(eRelease)
@@ -117,7 +117,7 @@ const ennemiesPosition = [ennemiP1, ennemiP2, ennemiP3, ennemiP4, ennemiP5, enne
         {
             keyPress.space = false
         }
-        console.log(keyPress)
+        // console.log(keyPress)
     }
     // Update player position by changing playerInfo.top and playerInfo.left (update every 10ms)
     function controleUpdate()
@@ -150,7 +150,7 @@ const ennemiesPosition = [ennemiP1, ennemiP2, ennemiP3, ennemiP4, ennemiP5, enne
 
     function changePlayerPosition()
     {
-        console.log(playerInfo)
+        // console.log(playerInfo)
         document.querySelector('.player').style.top = `${playerInfo.top}vh`
         document.querySelector('.player').style.left = `${playerInfo.left}vw`
     }
@@ -181,9 +181,9 @@ const ennemiesPosition = [ennemiP1, ennemiP2, ennemiP3, ennemiP4, ennemiP5, enne
         setTimeout(firingCheck, 350)
         if(keyPress.space === true)
         {
-            console.log('FIRE')
+            // console.log('FIRE')
             missiles.push({top: playerInfo.top + 5.30,left: playerInfo.left + 2.60,speedY: missileSpeed})
-            console.log(missiles)
+            // console.log(missiles)
         }
     }
     firingCheck()
@@ -252,7 +252,7 @@ window.setInterval(function()
         //==== randomised ennemies spawning system - unfinished =====
         if (time%5 == 0)
         {
-            random = (Math.floor(Math.random()*9))
+            random = (Math.floor(Math.random()*(ennemiesSpawn.length+1)))
             if (random != 0)
             {
                 for (let i = 0; i < random ; i ++)
@@ -263,7 +263,7 @@ window.setInterval(function()
                 }
             }
         }
-        for (k = 0; k < 7; k ++)
+        for (k = 0; k < (ennemiesSpawn.length-1); k ++)
         {
             if (ennemiesSpawn[k].style.visibility == `visible`)
             {
