@@ -21,7 +21,7 @@ Voici la liste des fonctionalités que nous avons pu programmer :
 /// Fonctionalitées présentes mais non finies ///
 
 - définition des points d'apparition d'ennemis, apparition toutes les 5 secondes d'un nombre aléatoire d'ennemis,
-  avec des sprites et des position aléatoires parmis les points 9*8 d'apparition
+  avec des sprites et des position aléatoires parmis les points 8 d'apparition
 - déplacement des ennemis vers le joueur, réinitialisation lorsqu'ils sortent de l'écran
 - création de missiles relativement à la position du joueur en appuyant sur la barre espace (ne se déplacent pas encore)
 - menu d'amélioration du vaisseau, change le sprite du vaisseau quand on clique sur l'un des trois boutons au choix;
