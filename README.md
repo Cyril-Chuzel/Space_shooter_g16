@@ -17,7 +17,9 @@ Voici la liste des fonctionalités que nous avons pu programmer :
 - Compteur de temps en secondes
 - Bouton pause, bloquant les déplacements du joueur, le compteur du temps, le défilement de l'arrière plan et l'apparition des ennemis
 - Menu de pause avec bouton resume pour reprendre la partie
+
 /// Fonctionalitées présentes mais non finies ///
+
 - définition des points d'apparition d'ennemis, apparition toutes les 5 secondes d'un nombre aléatoire d'ennemis,
   avec des sprites et des position aléatoires parmis les points 9*8 d'apparition
 - déplacement des ennemis vers le joueur, réinitialisation lorsqu'ils sortent de l'écran
